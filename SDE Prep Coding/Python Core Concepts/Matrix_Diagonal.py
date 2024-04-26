@@ -1,10 +1,17 @@
-Arr = [
-    [5,6,1,10],
-    [9,20,15,5],
-    [2,1,3,7],
-    [8,11,8,9]
-]
+Arr = [[5,6,1,10],
+       [9,20,15,5],
+       [2,1,3,7],
+       [8,11,8,9]
+      ]
 
+# Arr = [[1,1,1,1],
+#        [1,1,1,1],
+#        [1,1,1,1],
+#        [1,1,1,1]]
+
+Arr = [[1,2,3],
+       [4,5,6],
+       [7,8,9]]
 PD=[]
 SD=[]
 print("Primary Diagonal of the Matrix ")
@@ -22,7 +29,7 @@ print("     ")
 print(f"\nSum of Primary Diagonal : {sum(PD)}")
 print(f"\nSum of Secondary Diagonal : {sum(SD)}")
 
-print(f"\nDifference between Primary & Secondary Diagonal : {sum(PD)-sum(SD)}")
+print(f"\nSum of Primary & Secondary Diagonal : {sum(PD)+sum(SD)}")
 
 
 # for i in range(len(Arr)):
