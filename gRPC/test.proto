@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+message duration{
+    string startTime=1;
+    string endTime=2; 
+}
+
+enum taskStatus{
+    NONE=0;
+    IN_PROGRESS=1;
+    COMPLETED=2;
+    ON_HOLD=3;
+}
+message InitTask{
+    int64 taskId = 1;
+    string taskName = 2;
+    string ETA = 3;
+    taskStatus status=4;
+    string priority=5;
+    duration duration=6;
+    google.protobuf.Timestamp time=7;
+}
+
+message InitResponse{
+    int64 taskId = 1;
+}
+
+//Grpc Server - Service Defination
+service Tasks{
+    rpc add(InitTask) returns (InitResponse) {}
+}

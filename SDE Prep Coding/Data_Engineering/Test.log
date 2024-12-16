@@ -1,0 +1,8 @@
+2024:10:22 07:38:11 PM: DEBUG Logging.py 22 Logging- This is an Debug Message
+2024:10:22 07:38:11 PM: INFO Logging.py 23 Logging- This is an Info Message
+2024:10:22 07:38:11 PM: WARNING Logging.py 24 Logging- This is an Warming Message
+2024:10:22 07:38:11 PM: ERROR Logging.py 25 Logging- This is an Debug Message
+2024:10:22 07:38:11 PM: CRITICAL Logging.py 26 Logging- This is an Debug Message
+2024:10:22 07:38:11 PM: INFO Logging.py 61 Logging- Executing function: sample_function
+2024:10:22 07:38:11 PM: INFO Logging.py 58 Logging- Inside sample_function
+2024:10:22 07:38:11 PM: INFO Logging.py 61 Logging- Exiting function: sample_function
